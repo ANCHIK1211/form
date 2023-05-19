@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <h3>Форма регистрации</h3>
+        Введите логин <input type="text" placeholder="логин" name="login">
+        <p>Введите пароль <input type="password" placeholder="пароль" name="password"></p>
+        <p>
+            <label for="sport">Метка</label><!--Ставит галочку на "Спорт"-->
+        <h3>Мои интересы</h3>
+        <label> <input type="checkbox" name="interes" id="sport"> Спорт</label> <br>
+        <label><input type="checkbox" name="interes" id=""> Программирование </label><br>
+        <label> <input type="checkbox" name="interes" id=""> Танцы</label>
+        </p>
+        <p>
+        <h3>Род деятельности</h3>
+        <label><input type="radio" name="for">Для работы</label><br>
+        <label><input type="radio" name="for">Для учёбы</label><br>
+        <label><input type="radio" name="for">Для себя</label>
+        </p>
+        <h3>Город</h3>
+        <select name="city" id="">
+            <option value="Choose city">-- Выберите город --</option>
+            <optgroup label="Тюмень">
+                <option value="east">Восточный</option>
+                <option value="center">Центроальный</option>
+                <option value="kalinin">Калининский</option>
+            </optgroup>
+            <option value="Moscow">Москва</option>
+            <option value="Piter">Питер</option>
+        </select>
+
+        <p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        </p>
+        <input type="submit" value="Отправить">
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+
+</html>
